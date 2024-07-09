@@ -2,7 +2,7 @@
 export const Hero = () => {
 
     const socialMedia = [
-        {href: '/instagram.com', image:'/favicon.ico', alt: 'icon instagram'},
+        {href: 'https://www.instagram.com/', image:'/favicon.ico', alt: 'icon instagram'},
         {href: '/x.com', image:'/favicon.ico', alt: 'icon c'},
         {href: '/linkedIn.com', image:'/favicon.ico', alt: 'icon linkedIn'},
         {href: '/facebook.com', image:'/favicon.ico', alt: 'icon facebook'},
@@ -28,7 +28,10 @@ export const Hero = () => {
                 <div className="hero-right-social">
                     {socialMedia.map((link, index) => (
                         <div className="hero-right-social-item" key={index}>
-                            <a href={link.href} className="hero-right-social-item-link">
+                            <a href={link.href} 
+                                className="hero-right-social-item-link"
+                                target="_blank" rel="noopener noreferrer"
+                            >
                                 <img 
                                 className="hero-right-social-item-link-icon"
                                 src={link.image} 
