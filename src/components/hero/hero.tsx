@@ -16,6 +16,13 @@ export const Hero: React.FC = () => {
         localStorage.setItem('showModal', JSON.stringify(true));
     };
 
+    const socialMedia = [
+        { href: 'https://www.instagram.com/', image:'/cv-portfolio/Instagram.jpg', alt: 'icon instagram' },
+        { href: 'https://www.x.com', image:'/cv-portfolio/Twitter.jpg', alt: 'icon c' },
+        { href: 'https://www.linkedIn.com', image:'/cv-portfolio/LinkedIn.jpg', alt: 'icon linkedIn' },
+        { href: 'https://www.facebook.com', image:'/cv-portfolio/facebook.jpg', alt: 'icon facebook' },
+    ];
+
     const closeModal = () => {
         setShowModal(false);
         localStorage.removeItem('showModal');
@@ -36,12 +43,28 @@ export const Hero: React.FC = () => {
             <div className="hero-right">
                 <div className="hero-right-circle">
                     <img 
-                        src="/iam.jpg" 
+                        src="/cv-portfolio/iam.jpg" 
                         alt="I'm"
                         className="hero-right-circle-img"
                     />
                 </div>
                 <div className="hero-right-social">
+                    {socialMedia.map((link, index) => (
+                        <div className="hero-right-social-item" key={index}>
+                            <a 
+                                href={link.href} 
+                                className="hero-right-social-item-link"
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                <img 
+                                    className="hero-right-social-item-link-icon"
+                                    src={link.image} 
+                                    alt={link.alt}
+                                />
+                            </a>
+                        </div>
+                    ))}
                 </div>
             </div>
             {showModal && (
