@@ -26,7 +26,10 @@ export const Hero: React.FC = () => {
             <div className="hero-text">
                 <span className="hero-text-top">Hi , I am</span>
                 <h1 className="hero-text-title">Nykyta Koblianskyi</h1>
-                <span className="hero-text-specialty">Front-end <span className="hero-text-span">developer</span></span>
+                <div className="hero-wrapp">
+                    <p className="hero-text-specialty">Front-end</p>
+                    <p className="hero-text-span">developer</p>
+                </div>
                 <p className="hero-text-description">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
                 <button className="hero-btn btn" onClick={openModal}>Hire Me</button>
             </div>
