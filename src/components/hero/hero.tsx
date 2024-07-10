@@ -2,10 +2,10 @@
 export const Hero = () => {
 
     const socialMedia = [
-        {href: 'https://www.instagram.com/', image:'/favicon.ico', alt: 'icon instagram'},
-        {href: '/x.com', image:'/favicon.ico', alt: 'icon c'},
-        {href: '/linkedIn.com', image:'/favicon.ico', alt: 'icon linkedIn'},
-        {href: '/facebook.com', image:'/favicon.ico', alt: 'icon facebook'},
+        {href: 'https://www.instagram.com/', image:'/Instagram.jpg', alt: 'icon instagram'},
+        {href: 'https://www.x.com', image:'/Twitter.jpg', alt: 'icon c'},
+        {href: 'https://www.linkedIn.com', image:'/LinkedIn.jpg', alt: 'icon linkedIn'},
+        {href: 'https://www.facebook.com', image:'/facebook.jpg', alt: 'icon facebook'},
     ]
 
     return (
