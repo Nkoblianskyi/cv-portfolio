@@ -39,7 +39,7 @@ export const Modal: React.FC<ModalProps> = ({ closeModal }) => {
                 console.log(result.text);
                 alert('Message sent successfully!');
                 setFormData({ companyName: '', contactPerson: '', description: '' }); // Clear form fields after successful submission
-                closeModal(); // Close modal after successful submission
+                closeModal();
             })
             .catch((error) => {
                 console.error('Error sending message:', error);
@@ -53,7 +53,7 @@ export const Modal: React.FC<ModalProps> = ({ closeModal }) => {
             <span className="modal-content-close" onClick={closeModal}>&times;</span>
                 <div className='modal-content-logo'>
                     <img
-                        src="/logo.jpg"
+                        src="/cv-portfolio/logo.jpg"
                         alt="logo"
                         className='modal-content-logo-img'
                         width={80}

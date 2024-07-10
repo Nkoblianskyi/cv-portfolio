@@ -22,7 +22,7 @@ export const Header = () => {
         <header className="header">
             <div className='header-logo'>
                 <img
-                    src="/logo.jpg"
+                    src="/cv-portfolio/logo.jpg"
                     alt="logo"
                     className='header-logo-img'
                     width={80}
