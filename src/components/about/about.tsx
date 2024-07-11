@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Slider } from "../../Elements/slider";
+import { Slider } from "../../elements/slider";
 
 
 export const About: React.FC = () => {

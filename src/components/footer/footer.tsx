@@ -1,6 +1,6 @@
-import { Logo } from "../../Elements/logo";
-import { Navigation } from "../../Elements/navigation";
-import { Social } from "../../Elements/social";
+import { Logo } from "../../elements/logo";
+import { Navigation } from "../../elements/navigation";
+import { Social } from "../../elements/social";
 
 export const Footer = () => {
 

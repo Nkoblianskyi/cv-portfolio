@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-import { ProjectCard } from '../../Elements/card';
+import { ProjectCard } from '../../elements/card';
 
 interface Project {
     text: string;
@@ -83,7 +83,7 @@ export const Projects: React.FC = () => {
                 pagination={{ clickable: true }}
                 loop={true} // Дозволити зациклювання проектів
                 autoplay={{ delay: 3000, disableOnInteraction: false }} // Автоматичне прокручування
-                className="mySwiper" // Додати клас для власних стилів
+                className="mySwiper" 
             >
                 {projectBtn[selectedButtonIndex].cards.map((card, index) => (
                     <SwiperSlide key={index}>
