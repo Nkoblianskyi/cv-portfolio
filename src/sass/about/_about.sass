@@ -3,24 +3,29 @@
     grid-template-columns: 1fr 1fr
     gap: 50px
     padding: 30px
+
     &-left
         display: flex
         align-items: center
         align-content: center
+
         &-circle
-            width: 620px
-            height: 620px
+            width: 430px
+            height: 430px
             border: 5px solid #FF8233
             border-radius: 50%
             overflow: hidden
+
             &-img
                 object-fit: cover
-                width: 620px
-                height: 620px
+                width: 450px
+                height: 450px
+
     &-right
         display: flex
         flex-direction: column
         gap: 15px
+
         &-text
             font-family: Poppins
             font-size: 65px
@@ -28,6 +33,7 @@
             line-height: 97.5px
             letter-spacing: 0.03em
             text-align: left
+
             &-description
                 font-family: Poppins
                 font-size: 21px
@@ -35,10 +41,12 @@
                 line-height: 31.5px
                 letter-spacing: 0.03em
                 text-align: left
+
     &-slider
         display: flex
         flex-direction: column
         gap: 15px
+
         &-text
             font-family: Poppins
             font-size: 24px
@@ -46,21 +54,18 @@
             line-height: 36px
             letter-spacing: 0.03em
             text-align: left
+
             &-item
-                width: 100%
-                height: 8px
-                border-radius: 5px solid #111
-                outline: none
-                cursor: pointer
-                -webkit-appearance: none
-                appearance: none
                 width: 100%
                 height: 8px
                 border-radius: 5px
                 outline: none
+                cursor: pointer
+                -webkit-appearance: none
+                appearance: none
                 background: linear-gradient(to right, rgba(253, 111, 0, 1), rgba(253, 111, 0, 1))
                 cursor: pointer
-                
+
                 &::-webkit-slider-thumb
                     -webkit-appearance: none
                     appearance: none
@@ -76,3 +81,22 @@
                     border-radius: 50%
                     background: #FF8233
                     cursor: pointer
+
+    @media (max-width: 768px)
+        grid-template-columns: 1fr
+
+        &-left
+            display: none
+
+        &-right
+            align-items: center
+            text-align: center
+
+        &-slider
+            width: 100%
+
+        &-text
+            font-size: 20px
+
+    @media (max-width: 420px)
+        padding: 20px

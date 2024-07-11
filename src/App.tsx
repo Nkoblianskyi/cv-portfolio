@@ -6,11 +6,12 @@ import { About } from './components/about/about';
 const App: React.FC = () => {
 
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <About/>
-    </div>
+      <div className="App container">
+        <Header />
+        <Hero />
+        <About/>
+      </div>
+
   );
 };
 

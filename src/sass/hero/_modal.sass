@@ -8,11 +8,15 @@
     display: none
     justify-content: center
     align-items: center
+    z-index: 25
     &.show
         display: flex
     &-content
+        display: flex
+        flex-direction: column
+        width: 100%
         min-width: 250px
-        min-height: 375px
+        min-height: 425px
         position: relative
         background-color: #fff
         width: 100%
@@ -20,6 +24,7 @@
         padding: 50px
         border-radius: 4px
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20)
+
         &-logo
             display: flex
             align-items: center
@@ -42,18 +47,25 @@
                 text-transform: uppercase
                 letter-spacing: 0.15em
         &-close
-            width: 20px
-            height: 20px
-            cursor: pointer
-            color: #FFFFFF
-            background-color: rgba(253, 111, 0, 1)
-            display: flex
-            justify-content: center
-            align-items: center
-            margin-right: 50pxd
+            width: 25px
+            height: 25px
             position: absolute
+            background-color: rgba(253, 111, 0, 1)
             top: 20px
             left: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            border-radius: 5px
+            &-item
+                cursor: pointer
+                color: #FFFFFF
+                font-family: Poppins
+                font-size: 20px
+                font-weight: 800
+                line-height: 31.5px
+                letter-spacing: 0.03em
         &-wrapp
             margin-top: 20px
             height: 100%
