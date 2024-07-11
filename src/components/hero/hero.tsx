@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Modal } from './modal';
+import { Modal } from '../../Elements/modal';
+import { Social } from '../../Elements/social';
 
 export const Hero: React.FC = () => {
     const [showModal, setShowModal] = useState(false);
@@ -15,13 +16,6 @@ export const Hero: React.FC = () => {
         setShowModal(true);
         localStorage.setItem('showModal', JSON.stringify(true));
     };
-
-    const socialMedia = [
-        { href: 'https://www.instagram.com/', image:'/cv-portfolio/Instagram.jpg', alt: 'icon instagram' },
-        { href: 'https://www.x.com', image:'/cv-portfolio/Twitter.jpg', alt: 'icon c' },
-        { href: 'https://www.linkedIn.com', image:'/cv-portfolio/LinkedIn.jpg', alt: 'icon linkedIn' },
-        { href: 'https://www.facebook.com', image:'/cv-portfolio/facebook.jpg', alt: 'icon facebook' },
-    ];
 
     const closeModal = () => {
         setShowModal(false);
@@ -49,22 +43,7 @@ export const Hero: React.FC = () => {
                     />
                 </div>
                 <div className="hero-right-social">
-                    {socialMedia.map((link, index) => (
-                        <div className="hero-right-social-item" key={index}>
-                            <a 
-                                href={link.href} 
-                                className="hero-right-social-item-link"
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                            >
-                                <img 
-                                    className="hero-right-social-item-link-icon"
-                                    src={link.image} 
-                                    alt={link.alt}
-                                />
-                            </a>
-                        </div>
-                    ))}
+                    <Social/>
                 </div>
             </div>
             {showModal && (

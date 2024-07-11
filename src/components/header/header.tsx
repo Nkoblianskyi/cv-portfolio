@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Navigation } from '../../Elements/navigation';
+import { Logo } from '../../Elements/logo';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,40 +18,15 @@ export const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    
-    const navigation = [
-        { href: '/', label: 'Home' },
-        { href: '/', label: 'About Me' },
-        { href: '/', label: 'Services' },
-        { href: '/', label: 'Projects' },
-        { href: '/', label: 'Testimonials' },
-        { href: '/', label: 'Contact' }
-    ];
 
     return (
         <header className="header">
-            <div className='header-logo'>
-                <img
-                    src="/cv-portfolio/logo.jpg"
-                    alt="logo"
-                    className='header-logo-img'
-                    />
-                <div className="header-slogan">
-                    <h1 className="header-logo-title">Nykyta Koblyanskyi</h1>
-                    <span className="header-logo-span">Create the future by coding the present!</span>
-                </div>
-            </div>
+            <Logo />
             <button className="header-menu-btn btn" onClick={toggleMenu}>
                 Menu
             </button>
             <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
-                <div className="header-list">
-                    {navigation.map((link, index) => (
-                        <div className="header-item" key={index}>
-                            <a href={link.href}>{link.label}</a>
-                        </div>
-                    ))}
-                </div>
+                <Navigation/>
             </nav>
             <button className="header-btn btn" onClick={handleDownload}>Download CV</button>
         </header>
