@@ -4,7 +4,7 @@ interface CardProps {
     cards: { text: string; img: string; href: string; alt: string }[];
 }
 
-export const Card: React.FC<CardProps> = ({ cards }) => {
+export const ProjectCard: React.FC<CardProps> = ({ cards }) => {
     return (
         <div className="card">
             <div className="card-wrapp">

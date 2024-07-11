@@ -22,5 +22,10 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "paths": {
+      "swiper": [
+        "node_modules/swiper"
+      ]
+    }
 }
