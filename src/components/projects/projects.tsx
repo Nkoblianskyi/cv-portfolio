@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
-import { ProjectCard } from '../../';
+import { ProjectCard } from '../../elements/card';
 
 interface Project {
     text: string;
