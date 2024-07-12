@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import { ProjectCard } from '../../elements/card';
-import './pagination.scss';
+import './pagination.scss'
 
 interface Project {
     text: string;
@@ -82,7 +82,7 @@ export const Projects: React.FC = () => {
                     slideShadows: true,
                 }} // rotate кут повороту . stretch простір між слайдами . depth глибина слайду.
                     // modifier: Множник для масштабування. slideShadows: Якщо встановлено в true, додає тіні
-                navigation={true} // Якщо встановлено в true, додає стрілки для навігації між слайдами.
+                navigation={false} // Якщо встановлено в true, додає стрілки для навігації між слайдами.
                 pagination={{ clickable: true }} // Налаштування пагінації 
                 loop={true} // Дозволити зациклювання проектів
                 // autoplay={{ delay: 4500, disableOnInteraction: false }} // Автоматичне прокручування
