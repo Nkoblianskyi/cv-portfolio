@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import { ProjectCard } from '../../elements/card';
+import './pagination.scss';
 
 interface Project {
     text: string;
@@ -19,7 +20,7 @@ export const Projects: React.FC = () => {
             text: 'Internet Shop', cards: [
                 { text: 'AirCalling Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'sdfsd' },
                 { text: 'Business Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'sdfsd' },
-                { text: 'Ecom Web Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'sdfsd' },
+                { text: 'Ecom Web Page DesignEcom Web Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'sdfsd' },
             ]
         },
         {
@@ -69,21 +70,22 @@ export const Projects: React.FC = () => {
             </div>
             <Swiper
                 modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
-                effect="coverflow"
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={'auto'}
-                coverflowEffect={{
+                effect="coverflow" //effect: Визначає тип ефекту для слайдера. В даному випадку це "coverflow", що додає 3D ефект слайдам.
+                grabCursor={true} // grabCursor: Якщо встановлено в true, курсор миші змінюється на "grabbing
+                centeredSlides={true} // centeredSlides: Якщо встановлено в true, слайди будуть центруватися в контейнері.
+                slidesPerView={'auto'} //slidesPerView: Визначає кількість слайдів, які відображаються одночасно.
+                coverflowEffect={{ 
                     rotate: 50,
                     stretch: 0,
-                    depth: 100,
-                    modifier: 1,
+                    depth: 20,
+                    modifier: 0.25,
                     slideShadows: true,
-                }}
-                navigation={true} // Увімкнути стрілки навігації
-                pagination={{ clickable: true }}
+                }} // rotate кут повороту . stretch простір між слайдами . depth глибина слайду.
+                    // modifier: Множник для масштабування. slideShadows: Якщо встановлено в true, додає тіні
+                navigation={true} // Якщо встановлено в true, додає стрілки для навігації між слайдами.
+                pagination={{ clickable: true }} // Налаштування пагінації 
                 loop={true} // Дозволити зациклювання проектів
-                autoplay={{ delay: 3000, disableOnInteraction: false }} // Автоматичне прокручування
+                // autoplay={{ delay: 4500, disableOnInteraction: false }} // Автоматичне прокручування
                 className="mySwiper"
             >
                 {projectBtn[selectedButtonIndex].cards.map((card, index) => (
