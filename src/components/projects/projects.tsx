@@ -59,7 +59,7 @@ export const Projects: React.FC = () => {
                 <div className="projects-wrapp-btn">
                     {projectBtn.map((link, index) => (
                         <button
-                            className="projects-wrapp-btn-item"
+                            className={`projects-wrapp-btn-item ${selectedButtonIndex === index ? 'active' : ''}`}
                             key={index}
                             onClick={() => handleButtonClick(index)}
                         >
@@ -70,22 +70,20 @@ export const Projects: React.FC = () => {
             </div>
             <Swiper
                 modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
-                effect="coverflow" //effect: Визначає тип ефекту для слайдера. В даному випадку це "coverflow", що додає 3D ефект слайдам.
-                grabCursor={true} // grabCursor: Якщо встановлено в true, курсор миші змінюється на "grabbing
-                centeredSlides={true} // centeredSlides: Якщо встановлено в true, слайди будуть центруватися в контейнері.
-                slidesPerView={'auto'} //slidesPerView: Визначає кількість слайдів, які відображаються одночасно.
-                coverflowEffect={{ 
+                effect="coverflow"
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={'auto'}
+                coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
                     depth: 20,
                     modifier: 0.25,
                     slideShadows: true,
-                }} // rotate кут повороту . stretch простір між слайдами . depth глибина слайду.
-                    // modifier: Множник для масштабування. slideShadows: Якщо встановлено в true, додає тіні
-                navigation={false} // Якщо встановлено в true, додає стрілки для навігації між слайдами.
-                pagination={{ clickable: true }} // Налаштування пагінації 
-                loop={true} // Дозволити зациклювання проектів
-                // autoplay={{ delay: 4500, disableOnInteraction: false }} // Автоматичне прокручування
+                }}
+                navigation={false}
+                pagination={{ clickable: true }}
+                loop={true}
                 className="mySwiper"
             >
                 {projectBtn[selectedButtonIndex].cards.map((card, index) => (
