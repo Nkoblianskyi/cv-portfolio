@@ -7,8 +7,8 @@ export const Header = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/sample.pdf';
-        link.download = 'sample.pdf';
+        link.href = '/CV-Koblianskyi.pdf';
+        link.download = '/CV-Koblianskyi.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
