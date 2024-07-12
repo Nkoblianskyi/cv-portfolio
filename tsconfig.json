@@ -24,8 +24,8 @@
     "src"
   ],
   "paths": {
-      "swiper": [
-        "node_modules/swiper"
-      ]
-    }
+    "swiper": [
+      "node_modules/swiper"
+    ]
+  }
 }
