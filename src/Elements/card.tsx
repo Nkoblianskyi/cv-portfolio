@@ -25,7 +25,7 @@
         return () => {
         swiper.destroy();
         };
-    }, []); // Ensure useEffect runs only once on component mount
+    }, []);
 
     return (
         <div className="card-container">
