@@ -25,7 +25,7 @@ export const Projects: React.FC = () => {
         },
         {
             text: 'Landing Page', cards: [
-                { text: 'Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'sdfsd' },
+                { text: 'Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'sdfsd' },
                 { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'sdfsd' },
                 { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'sdfsd' },
             ]
