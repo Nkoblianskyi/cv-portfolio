@@ -6,7 +6,7 @@ export const Navigation = () => {
         { href: '/', label: 'About Me' },
         { href: '/', label: 'Services' },
         { href: '/', label: 'Projects' },
-        { href: '/', label: 'Testimonials' },
+        // { href: '/', label: 'Testimonials' },
         { href: '/', label: 'Contact' }
     ];
 
