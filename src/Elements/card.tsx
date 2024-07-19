@@ -1,32 +1,10 @@
     import React, { useEffect } from "react";
-    import Swiper from "swiper";
-    import "swiper/swiper-bundle.css";
-
+    
     interface CardProps {
     cards: { text: string; img: string; href: string; alt: string }[];
     }
 
     export const ProjectCard: React.FC<CardProps> = ({ cards }) => {
-    useEffect(() => {
-        const swiper = new Swiper(".swiper-container", {
-        slidesPerView: 1, // Display only one slide at a time
-        spaceBetween: 0, // No space between slides
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        });
-
-        return () => {
-        swiper.destroy();
-        };
-    }, []);
-
     return (
         <div className="card-container">
         <div className="swiper-container">

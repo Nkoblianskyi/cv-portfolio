@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import { ProjectCard } from '../../elements/card';
-import './pagination.scss'
+
 
 interface Project {
     text: string;
@@ -74,32 +67,11 @@ export const Projects: React.FC = () => {
                     ))}
                 </div>
             </div>
-            <Swiper
-                modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
-                effect="coverflow"
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={'auto'}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 20,
-                    modifier: 0.25,
-                    slideShadows: true,
-                }}
-                navigation={false}
-                pagination={{ clickable: true }}
-                loop={true}
-                className="mySwiper"
-            >
                 {projectBtn[selectedButtonIndex].cards.map((card, index) => (
-                    <SwiperSlide key={index}>
                         <div className="swiper-slide-content">
                             <ProjectCard cards={[card]} />
                         </div>
-                    </SwiperSlide>
                 ))}
-            </Swiper>
         </div>
     );
 };
