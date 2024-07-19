@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Modal } from '../../elements/modal';
 import { Social } from '../../elements/social';
-
+import { Modal } from '../../elements/modal';
 export const Hero: React.FC = () => {
     const [showModal, setShowModal] = useState(false);
 
