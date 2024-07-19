@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Slider } from "./slider";
+import { Slider } from "../../elements/slider";
 
 
 export const About: React.FC = () => {
@@ -23,7 +23,7 @@ export const About: React.FC = () => {
             <div className="about-left">
                 <div className="about-left-circle">
                     <img
-                        src="/iam2.jpg"
+                        src="/cv-portfolio/iam2.jpg"
                         alt="I'm"
                         className="about-left-circle-img"
                     />
