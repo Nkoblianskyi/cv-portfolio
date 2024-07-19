@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 interface CardProps {
     cards: { text: string; img: string; href: string; alt: string }[];
