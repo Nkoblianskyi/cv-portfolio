@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ProjectCard } from '../../elements/card';
+import { ProjectCard } from '../../items/card';
 
 interface Project {
     text: string;

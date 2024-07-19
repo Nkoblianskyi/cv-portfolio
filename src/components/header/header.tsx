@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Navigation } from '../../elements/navigation';
-import { Logo } from '../../elements/logo';
+import { Navigation } from '../../items/navigation';
+import { Logo } from '../../items/logo';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
