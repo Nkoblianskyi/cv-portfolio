@@ -11,42 +11,39 @@ export const Projects: React.FC = () => {
         {
             text: 'Internet Shop',
             cards: [
-                { text: 'AirCalling Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'AirCalling Landing Page Design' },
-                { text: 'Business Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Business Landing Page Design' },
-                { text: 'Ecom Web Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Ecom Web Page Design' },
+                { text: 'AirCalling Landing Page Design', img: '/logo.jpg', href: '/', alt: 'AirCalling Landing Page Design' },
+                { text: 'Business Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Business Landing Page Design' },
+                { text: 'Ecom Web Page Design', img: '/logo.jpg', href: '/', alt: 'Ecom Web Page Design' },
             ],
         },
         {
             text: 'Landing Page',
             cards: [
-                { text: 'Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Another Landing Page Design' },
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
-<<<<<<< HEAD
-=======
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
->>>>>>> 2ddaa268f3a7fc4f3f864a28bc892b2d302eafbe
+                { text: 'Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Another Landing Page Design' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
             ],
         },
         {
             text: 'App application',
             cards: [
-                { text: 'App Design 1', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'App Design 1' },
-                { text: 'App Design 2', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'App Design 2' },
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
+                { text: 'App Design 1', img: '/logo.jpg', href: '/', alt: 'App Design 1' },
+                { text: 'App Design 2', img: '/logo.jpg', href: '/', alt: 'App Design 2' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
             ],
         },
         {
             text: 'Blog',
             cards: [
-                { text: 'Blog Post Design 1', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Blog Post Design 1' },
-                { text: 'Blog Post Design 2', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Blog Post Design 2' },
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
-                { text: 'Yet Another Landing Page Design', img: '/cv-portfolio/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
+                { text: 'Blog Post Design 1', img: '/logo.jpg', href: '/', alt: 'Blog Post Design 1' },
+                { text: 'Blog Post Design 2', img: '/logo.jpg', href: '/', alt: 'Blog Post Design 2' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
+                { text: 'Yet Another Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Yet Another Landing Page Design' },
             ],
         },
     ];
