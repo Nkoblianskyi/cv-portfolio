@@ -9,7 +9,8 @@ export const Logo = () => {
             />
             <div className="header-slogan">
                 <h1 className="header-logo-title">Nykyta Koblyanskyi</h1>
-                <span className="header-logo-span">Create the future by coding the present!</span>
+                <span className="header-logo-span">Create the future - </span>
+                <span className="header-logo-span">by coding the present!</span>
             </div>
         </div>
     )

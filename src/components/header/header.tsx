@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navigation } from '../../items/navigation';
 import { Logo } from '../../items/logo';
+import { LanguageSelector } from '../../items/languageSelector';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,6 +29,9 @@ export const Header = () => {
             <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
                 <Navigation/>
             </nav>
+            <div>
+                <LanguageSelector/>
+            </div>
             <button className="header-btn btn" onClick={handleDownload}>Download CV</button>
         </header>
     );

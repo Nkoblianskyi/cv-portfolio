@@ -1,13 +1,15 @@
+import { useTranslation } from "react-i18next";
 
 export const Navigation = () => {
+    const { t } = useTranslation();
 
     const navigation = [
-        { href: 'https://nkoblianskyi.github.io/cv-portfolio/', label: 'Home' },
-        { href: '/', label: 'About Me' },
-        { href: '/', label: 'Services' },
-        { href: '/', label: 'Projects' },
+        { href: 'https://nkoblianskyi.github.io/cv-portfolio/', label: t('home') },
+        { href: '/', label: t('aboutMe') },
+        { href: '/', label: t('services') },
+        { href: '/', label: t('projects') },
         // { href: '/', label: 'Testimonials' },
-        { href: '/', label: 'Contact' }
+        { href: '/', label: t('contact') }
     ];
 
     return (

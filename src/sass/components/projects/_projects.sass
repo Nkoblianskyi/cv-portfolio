@@ -54,6 +54,7 @@
     align-content: center
     align-items: center
     gap: 20px
+    flex-wrap: wrap
 
 @media (max-width: 768px)
     .projects
@@ -68,3 +69,10 @@
 
     .swiper-slide-content
         padding: 0 10px
+        flex-direction: column
+        align-items: stretch
+        gap: 15px
+
+@media (max-width: 480px)
+    .swiper-slide-content
+        gap: 10px

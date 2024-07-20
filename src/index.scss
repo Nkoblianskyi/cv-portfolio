@@ -1,15 +1,13 @@
-@import './sass/main.sass';
-
-
+@import "./sass/main.sass";
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Popins',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  max-width: 1240px;
   margin: 0 auto;
+  box-sizing: border-box; /* Додає box-sizing для забезпечення адаптивності */
 }
 
 a {
@@ -19,6 +17,8 @@ a {
 
 ul {
   list-style: none;
+  margin: 0; /* Додає нульовий відступ для списків */
+  padding: 0; /* Додає нульовий відступ для списків */
 }
 
 h1 {
@@ -29,5 +29,42 @@ p {
   margin: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Забезпечує, що padding і border входять у ширину елемента */
+}
 
+/* Додає базовий стиль для контейнера */
+.container {
+  width: 100%;
+  max-width: 1240px; /* Переконайтесь, що це значення не перевищує ширину екрану на мобільних пристроях */
+  margin: 0 auto;
+  padding: 0 20px; /* Додає бокові відступи */
+  overflow-x: hidden; /* Запобігає горизонтальному скролінгу */
+}
 
+/* Медіа-запити для адаптивності */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}

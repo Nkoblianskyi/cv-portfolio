@@ -1,5 +1,4 @@
 
-
 @import './components/header/_header'
 @import './components/hero/_hero'
 @import './components/about/_about'
@@ -10,13 +9,30 @@
 @import './items/_card'
 @import './items/_modal'
 @import './items/_social'
-    
+@import './items/_languageSelector'
 
 .container
     width: 100%
     max-width: 1420px
     margin: 0 auto
     background-color: #FFF
+    padding: 0 20px 
+
+@media (max-width: 1200px)
+    .container
+        padding: 0 15px
+
+@media (max-width: 992px)
+    .container
+        padding: 0 10px
+
+@media (max-width: 768px)
+    .container
+        padding: 0 5px
+
+@media (max-width: 576px)
+    .container
+        padding: 0 10px
 
 .btn
     color: #FFFFFF
@@ -29,6 +45,11 @@
     font-style: normal
     width: 150px
     height: 50px
+    transition: transform 0.2s, background-color 0.2s
     &:hover
-        background-color: #111
-        
+        background-color: #0056b3
+    &:active
+        transform: scale(0.95)
+        background-color: #0056b3
+    &:focus
+        background-color: #0056b3
