@@ -34,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare-docs": "powershell -Command \"Remove-Item -Path docs\\* -Recurse -Force; Copy-Item -Path build\\* -Destination docs\\ -Recurse -Force\"",
+  "deploy": "npm run build && npm run prepare-docs && git add docs && git commit -m \"Update GitHub Pages site\" && git push origin main"
   },
   "eslintConfig": {
     "extends": [
