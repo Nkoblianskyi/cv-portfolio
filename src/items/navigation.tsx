@@ -14,7 +14,7 @@ export const Navigation = () => {
         <div className="header-list">
             {navigation.map((link, index) => (
                 <div className="header-item" key={index}>
-                    <a href={link.href}>{link.label}</a>
+                    <a href={link.href} className="header-item-link">{link.label}</a>
                 </div>
             ))}
         </div>

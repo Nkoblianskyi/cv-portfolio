@@ -11,33 +11,33 @@ export const Projects: React.FC = () => {
         {
             text: 'Internet Shop',
             cards: [
-                { text: 'AirCalling Landing Page Design', img: '/logo.jpg', href: '/', alt: 'AirCalling Landing Page Design' },
-                { text: 'Business Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Business Landing Page Design' },
-                { text: 'Ecom Web Page Design', img: '/logo.jpg', href: '/', alt: 'Ecom Web Page Design' },
+                { text: 'AirCalling Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'AirCalling Landing Page Design' },
+                { text: 'Business Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Business Landing Page Design' },
+                { text: 'Ecom Web Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Ecom Web Page Design' },
             ],
         },
         {
             text: 'Landing Page',
             cards: [
-                { text: 'AirCalling Landing Page Design', img: '/logo.jpg', href: '/', alt: 'AirCalling Landing Page Design' },
-                { text: 'Business Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Business Landing Page Design' },
-                { text: 'Ecom Web Page Design', img: '/logo.jpg', href: '/', alt: 'Ecom Web Page Design' },
+                { text: 'AirCalling Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'AirCalling Landing Page Design' },
+                { text: 'Business Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Business Landing Page Design' },
+                { text: 'Ecom Web Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Ecom Web Page Design' },
             ],
         },
         {
             text: 'App application',
             cards: [
-                { text: 'AirCalling Landing Page Design', img: '/logo.jpg', href: '/', alt: 'AirCalling Landing Page Design' },
-                { text: 'Business Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Business Landing Page Design' },
-                { text: 'Ecom Web Page Design', img: '/logo.jpg', href: '/', alt: 'Ecom Web Page Design' },
+                { text: 'AirCalling Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'AirCalling Landing Page Design' },
+                { text: 'Business Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Business Landing Page Design' },
+                { text: 'Ecom Web Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Ecom Web Page Design' },
             ],
         },
         {
             text: 'Blog',
             cards: [
-                { text: 'AirCalling Landing Page Design', img: '/logo.jpg', href: '/', alt: 'AirCalling Landing Page Design' },
-                { text: 'Business Landing Page Design', img: '/logo.jpg', href: '/', alt: 'Business Landing Page Design' },
-                { text: 'Ecom Web Page Design', img: '/logo.jpg', href: '/', alt: 'Ecom Web Page Design' },
+                { text: 'AirCalling Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'AirCalling Landing Page Design' },
+                { text: 'Business Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Business Landing Page Design' },
+                { text: 'Ecom Web Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Ecom Web Page Design' },
             ],
         },
     ];

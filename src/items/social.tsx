@@ -1,10 +1,10 @@
 
 export const Social = () => {
     const socialMedia = [
-        { href: 'https://www.instagram.com/accounts/onetap/?next=%2F', image: '/Instagram.jpg', alt: 'icon instagram' },
-        { href: 'https://www.x.com', image: '/Twitter.jpg', alt: 'icon c' },
-        { href: 'https://www.linkedIn.com', image: '/LinkedIn.jpg', alt: 'icon linkedIn' },
-        { href: 'https://www.facebook.com', image: '/facebook.jpg', alt: 'icon facebook' },
+        { href: 'https://www.instagram.com/accounts/onetap/?next=%2F', image: `${process.env.PUBLIC_URL}/Instagram.jpg`, alt: 'icon instagram' },
+        { href: 'https://www.x.com', image: `${process.env.PUBLIC_URL}/Twitter.jpg`, alt: 'icon c' },
+        { href: 'https://www.linkedIn.com', image: `${process.env.PUBLIC_URL}/LinkedIn.jpg`, alt: 'icon linkedIn' },
+        { href: 'https://www.facebook.com', image: `${process.env.PUBLIC_URL}/facebook.jpg`, alt: 'icon facebook' },
     ];
     return (
         <div className="social">

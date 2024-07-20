@@ -1,17 +1,24 @@
 .header-list
     display: flex
     align-items: center
-    justify-content: center
+    align-content: center
     gap: 20px
 
-.header-item
+.header-item-link
     font-family: Poppins
     font-size: 21px
     font-weight: 400
     line-height: 31.5px
     letter-spacing: 0.03em
     text-align: left
+
+.header-item
     color: #111
     &:hover
-        color: rgba(253, 111, 0, 1)
+        color: #FD6F00
         transform: scale(1.25)
+    @media (max-width: 768px)
+        .header-item-link
+            color: #FFF
+            &:hover
+                transform: scale(1.25)

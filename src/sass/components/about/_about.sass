@@ -3,7 +3,6 @@
     grid-template-columns: 1fr 1fr
     gap: 50px
     padding: 30px
-
     &-left
         display: flex
         align-items: center
@@ -86,17 +85,17 @@
         grid-template-columns: 1fr
 
         &-left
-            display: none
+            display: none // Приховуємо блок з зображенням на мобільних пристроях
 
-        &-right
-            align-items: center
-            text-align: center
+            &-right
+                align-items: center
+                text-align: center
 
-        &-slider
-            width: 100%
+            &-slider
+                width: 100% // Ширина слайдера залишається без змін
 
-        &-text
-            font-size: 20px
+            &-text
+                font-size: 20px // Зменшення розміру шрифта для мобільних пристроїв
 
-    @media (max-width: 420px)
-        padding: 20px
+        @media (max-width: 420px)
+            padding: 20px
