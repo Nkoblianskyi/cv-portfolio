@@ -3,7 +3,7 @@ export const Logo = () => {
     return (
         <div className='header-logo'>
             <img
-                src="/cv-portfolio/logo.jpg"
+                src="/logo.jpg"
                 alt="logo"
                 className='header-logo-img'
             />

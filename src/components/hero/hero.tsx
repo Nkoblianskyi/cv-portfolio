@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
             <div className="hero-right">
                 <div className="hero-right-circle">
                     <img 
-                        src="/cv-portfolio/iam.jpg" 
+                        src="/iam.jpg" 
                         alt="I'm"
                         className="hero-right-circle-img"
                     />
