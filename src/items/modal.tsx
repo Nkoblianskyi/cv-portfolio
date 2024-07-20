@@ -64,7 +64,7 @@ export const Modal: React.FC<ModalProps> = ({ closeModal }) => {
                     </div>
                     <div className='modal-content-logo'>
                         <img
-                            src="/logo.jpg"
+                            src="/cv-portfolio/logo.jpg"
                             alt="logo"
                             className='modal-content-logo-img'
                             width={80}
