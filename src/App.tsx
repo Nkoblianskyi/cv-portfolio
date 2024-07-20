@@ -10,10 +10,10 @@ const App: React.FC = () => {
   return (
       <div className="App container">
         <Header />
-        <Hero />
+        {/* <Hero />
         <About/>
         <Projects/>
-        <Footer/>
+        <Footer/> */}
       </div>
 
   );
