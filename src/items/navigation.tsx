@@ -2,7 +2,7 @@
 export const Navigation = () => {
 
     const navigation = [
-        { href: '/', label: 'Home' },
+        { href: 'https://nkoblianskyi.github.io/cv-portfolio/', label: 'Home' },
         { href: '/', label: 'About Me' },
         { href: '/', label: 'Services' },
         { href: '/', label: 'Projects' },
