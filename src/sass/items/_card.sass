@@ -10,14 +10,19 @@
         padding: 10px
 
     &-item
+        display: flex
+        align-items: center
+        justify-content: center
         &-link
             display: flex
             align-items: center
             align-content: center
             flex-direction: column
             width: auto
-            max-width: 300px
-            max-height: 400px
+            max-width: 350px
+            max-height: 450px
+            &:hover
+                transform: scale(1.05)
 
             @media (max-width: 768px)
                 flex: 0 0 auto
@@ -35,16 +40,12 @@
         &-container
             background-color: rgba(255, 235, 219, 1)
             border-radius: 5px
-            padding: 20px
             display: flex
             flex-direction: column
             align-items: center
-            gap: 20px
             text-align: center
             position: relative
-            max-width: 300px
-            max-height: 400px
+            padding: 20px
             &-img
-                max-width: 350px
-                height: auto
+                max-width: 100%
                 height: auto

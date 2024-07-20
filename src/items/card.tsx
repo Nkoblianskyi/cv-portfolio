@@ -6,11 +6,9 @@ interface CardProps {
 
 export const ProjectCard: React.FC<CardProps> = ({ cards }) => {
     return (
-        <div className="card-container">
-            <div className="swiper-container">
-                <div className="swiper-wrapper">
+        <div className="card">
                     {cards.map((link, index) => (
-                        <div className="swiper-slide" key={index}>
+                        <div className="card-item" key={index}>
                             <a href={link.href} className="card-item-link">
                                 <div className="card-item-container">
                                     <img
@@ -25,8 +23,6 @@ export const ProjectCard: React.FC<CardProps> = ({ cards }) => {
                             </a>
                         </div>
                     ))}
-                </div>
-            </div>
         </div>
     );
 };
