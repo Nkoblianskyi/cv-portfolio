@@ -11,7 +11,7 @@ export const Projects: React.FC = () => {
         {
             text: 'Internet Shop',
             cards: [
-                { text: 'AirCalling Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'AirCalling Landing Page Design' },
+                { text: 'Shop decor Home', img: `${process.env.PUBLIC_URL}/Decor-shop.png`, href: 'https://nkoblianskyi.github.io/sklep/', alt: 'Shop decor Home' },
                 { text: 'Business Landing Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Business Landing Page Design' },
                 { text: 'Ecom Web Page Design', img: `${process.env.PUBLIC_URL}/logo.jpg`, href: '/', alt: 'Ecom Web Page Design' },
             ],
