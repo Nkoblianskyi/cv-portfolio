@@ -8,7 +8,7 @@ export const Navigation = () => {
         { href: '/', label: t('aboutMe') },
         { href: '/', label: t('services') },
         { href: '/', label: t('projects') },
-        // { href: '/', label: 'Testimonials' },
+        { href: '/', label: 'Testimonials' },
         { href: '/', label: t('contact') }
     ];
 

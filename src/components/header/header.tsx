@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navigation } from '../../items/navigation';
 import { Logo } from '../../items/logo';
 import { LanguageSelector } from '../../items/languageSelector';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 375);
 
     const handleDownload = () => {
         const link = document.createElement('a');
@@ -19,6 +20,16 @@ export const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleResize = () => {
+        setIsSmallScreen(window.innerWidth <= 375);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <header className="header">
@@ -27,12 +38,14 @@ export const Header = () => {
                 Menu
             </button>
             <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
-                <Navigation/>
+                <Navigation />
             </nav>
             <div>
-                <LanguageSelector/>
+                <LanguageSelector />
             </div>
-            <button className="header-btn btn" onClick={handleDownload}>Download CV</button>
+            <button className="header-btn btn" onClick={handleDownload}>
+                {isSmallScreen ? 'CV' : 'Download CV'}
+            </button>
         </header>
     );
 };

@@ -17,9 +17,13 @@
     &:hover
         color: #FD6F00
         transform: scale(1.25)
-    @media (max-width: 768px)
-        .header-item-link
-            color: #111
-            font-size: 18px
-            &:hover
-                transform: scale(1.25)
+
+@media (max-width: 575px)
+    .header-list
+        padding: 15px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-column-gap: 0px
+        grid-row-gap: 0px
+        gap: 5px
