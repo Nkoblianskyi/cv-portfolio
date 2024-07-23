@@ -9,90 +9,128 @@
     justify-content: center
     align-items: center
     z-index: 750
+
     &.show
         display: flex
+
     &-content
         display: flex
         flex-direction: column
-        width: 100%
-        min-width: 250px
-        min-height: 425px
         position: relative
         background-color: #fff
-        width: 100%
-        max-width: 528px
         padding: 50px
         border-radius: 4px
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20)
+        min-width: 250px
+        max-width: 528px
+        width: 100%
+        min-height: 425px
 
-        &-logo
-            display: flex
-            align-items: center
-            align-content: center
-            &-title
-                color: rgb(191, 40, 27)
-                font-size: 18px
-                font-weight: 700
-                font-style: normal
-                font-family: "Russo One"
-                text-transform: uppercase
-                letter-spacing: 0.08em
-                margin-bottom: 0
-            &-span
-                color: rgb(242, 162, 92)
-                font-size: 14px
-                font-weight: 400
-                font-style: normal
-                font-family: Kanit
-                text-transform: uppercase
-                letter-spacing: 0.15em
+    &-content-logo
+        display: flex
+        align-items: center
+        align-content: center
+
+    &-content-logo-title
+        color: rgb(191, 40, 27)
+        font-size: 18px
+        font-weight: 700
+        font-style: normal
+        font-family: "Russo One"
+        text-transform: uppercase
+        letter-spacing: 0.08em
+        margin-bottom: 0
+
+    &-content-logo-span
+        color: rgb(242, 162, 92)
+        font-size: 14px
+        font-weight: 400
+        font-style: normal
+        font-family: Kanit
+        text-transform: uppercase
+        letter-spacing: 0.15em
+
+    &-content-close
+        width: 25px
+        height: 25px
+        position: absolute
+        background-color: rgba(253, 111, 0, 1)
+        top: 20px
+        left: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        border-radius: 5px
+
+    &-content-close-item
+        cursor: pointer
+        color: #FFFFFF
+        font-family: Poppins
+        font-size: 20px
+        font-weight: 800
+        line-height: 31.5px
+        letter-spacing: 0.03em
+
+    &-content-wrapp
+        margin-top: 20px
+        height: 100%
+        display: flex
+        justify-content: start
+        flex-direction: column
+        gap: 10px
+
+    &-content-input
+        padding: 10px
+
+    &-content-input:hover
+        border: 2px solid rgba(253, 111, 0, 1)
+
+    &-content-input:focus
+        border-color: rgba(253, 111, 0, 1)
+        outline: none
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+
+    &-content-input-textarea
+        resize: none
+        padding: 10px
+        min-height: 150px
+
+    &-content-input-textarea:hover
+        border: 2px solid rgba(253, 111, 0, 1)
+
+    &-content-input-textarea:focus
+        border-color: rgba(253, 111, 0, 1)
+        outline: none
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+
+    &-content-btn
+        position: absolute
+        bottom: 15px
+        right: 15px
+
+@media (max-width: 768px)
+    .modal-content
+        padding: 30px
+        max-width: 400px
+
+@media (max-width: 480px)
+    .modal-content
+        padding: 20px
+        max-width: 300px
+        min-height: auto
+
+        &-logo-title
+            font-size: 16px
+
+        &-logo-span
+            font-size: 12px
+
         &-close
-            width: 25px
-            height: 25px
-            position: absolute
-            background-color: rgba(253, 111, 0, 1)
-            top: 20px
-            left: 20px
-            display: flex
-            align-items: center
-            justify-content: center
-            text-align: center
-            border-radius: 5px
-            &-item
-                cursor: pointer
-                color: #FFFFFF
-                font-family: Poppins
-                font-size: 20px
-                font-weight: 800
-                line-height: 31.5px
-                letter-spacing: 0.03em
-        &-wrapp
-            margin-top: 20px
-            height: 100%
-            display: flex
-            justify-content: start
-            flex-direction: column
-            gap: 10px
+            top: 10px
+            left: 10px
+            width: 20px
+            height: 20px
 
-        &-input
-            padding: 10px
-            &:hover
-                border: 2px solid rgba(253, 111, 0, 1)
-            &:focus
-                border-color: rgba(253, 111, 0, 1)
-                outline: none
-                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
-            &-textarea
-                resize: none
-                padding: 10px
-                min-height: 150px
-                &:hover
-                    border: 2px solid rgba(253, 111, 0, 1)
-                &:focus
-                    border-color: rgba(253, 111, 0, 1)
-                    outline: none
-                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
-        &-btn
-            position: absolute
-            bottom: 15px
-            right: 15px
+        &-close-item
+            font-size: 16px
